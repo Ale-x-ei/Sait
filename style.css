@@ -1,0 +1,280 @@
+body {
+    font: 11pt Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
+    margin: 0; /* Отступы на странице */
+   }
+   h1 {
+    font-size: 36px; /* Размер шрифта */
+    margin: 0; /* Убираем отступы */
+    color: #333; /* Цвет текста */
+   }
+   h2 {
+    margin-top: 0; /* Убираем отступ сверху */
+   }
+   #container {
+   width: 1010px;
+    margin: 0 auto; /* Выравнивание по центру */
+	 background: #fff; /* Цвет фона левой колонки */
+	text-align: justify;
+   }
+   #sidebar { /* Левая колонка */
+    float: left; /* Обтекание справа */
+    border: 0px solid #333; /* Параметры рамки вокруг */
+    width: 160px; /* Ширина колонки */
+    padding: 5px; /* Поля вокруг текста */
+    margin: 5px 0px 5px 5px; /* Значения отступов */
+   }
+   #content { /* Правая колонка */
+    margin: 0px 0px 20px 180px; /* Значения отступов */
+    padding: 0px; /* Поля вокруг текста */
+    border: 0px solid #333; /* Параметры рамки */}
+	
+   #content1 { /* Правая колонка */
+    margin: 0px 0px 20px 180px; /* Значения отступов */
+    padding: 0px; /* Поля вокруг текста */
+    border: 0px solid #333; /* Параметры рамки */
+	padding: 10 20px;
+	
+   }
+   #footer { /* Нижний блок */
+    background: #333; /* Цвет фона */
+    padding: 5px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    clear: left; /* Отменяем действие float */
+   }
+   	table {
+	display: block;
+	text-decoration: none;
+	color: #333;
+	background: #fff;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	}
+	td{
+	font-size: 80%;
+	}
+
+	p{font-family: Arial, serif;
+	font-size: 14px;
+	 line-height: 1.5;
+}
+
+   A {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+	color: #000000;
+   } 
+    A:visited {
+    color: #000000; /* Цвет посещенной ссылки */
+   } 
+   A:hover {
+    color: #800000; /* Цвет ссылки при наведении на нее курсора мыши */  
+   }
+.scrollTop{ 
+	background:url(arrows2.png) 0 0 no-repeat;
+	display:block; width:50px; height:50px; 
+	position:fixed; bottom:10px; left:3%;
+	z-index:2000; 
+}
+.scrollTop:hover{ background-position:0 -58px; }
+
+/* Главное меню */
+#menu
+{
+        width: 100%;
+		height:35px;
+        margin: 0;
+        padding: 10px 0 0 0;
+        list-style: none;
+        background: #111;
+        background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+        background: -webkit-linear-gradient(#444, #111);
+        background: -o-linear-gradient(#444, #111);
+        background: -ms-linear-gradient(#444, #111);
+        background: linear-gradient(#444, #111);
+        -moz-border-radius:0 0 0 25px;
+        border-radius:0 0 0 25px;
+        -moz-box-shadow: 0 2px 1px #9c9c9c;
+        -webkit-box-shadow: 0 2px 1px #9c9c9c;
+        box-shadow: 0 2px 1px #9c9c9c;
+}
+
+#menu li
+{
+        float: left;
+        padding: 0 0 10px 0;
+        position: relative;
+}
+
+#menu a
+{
+        float: left;
+        height: 25px;
+        padding: 0 25px;
+        color: #999;
+        text-transform: uppercase;
+        font: bold 12px/25px Arial, Helvetica;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a
+{
+        color: #fafafa;
+}
+
+*html #menu li a:hover /* IE6 */
+{
+        color: #fafafa;
+}
+
+#menu li:hover > ul
+{
+        display: block;
+}
+
+/* Подменю */
+
+#menu ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;
+    background: #444;
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);
+    background: -o-linear-gradient(#444, #111);
+    background: -ms-linear-gradient(#444, #111);
+    background: linear-gradient(#444, #111);
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu ul li
+{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child
+{
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#menu ul a
+{
+    padding: 10px;
+        height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+        text-transform: none;
+}
+
+*html #menu ul a /* IE6 */
+{
+        height: 10px;
+        width: 150px;
+}
+
+*:first-child+html #menu ul a /* IE7 */
+{
+        height: 10px;
+        width: 150px;
+}
+
+#menu ul a:hover
+{
+    background: #0186ba;
+        background: -moz-linear-gradient(#04acec,  #0186ba);
+        background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+        background: -webkit-linear-gradient(#04acec,  #0186ba);
+        background: -o-linear-gradient(#04acec,  #0186ba);
+        background: -ms-linear-gradient(#04acec,  #0186ba);
+        background: linear-gradient(#04acec,  #0186ba);
+}
+
+#menu ul li:first-child a
+{
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after
+{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after
+{
+    border-bottom-color: #04acec;
+}
+
+#menu ul li:last-child a
+{
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+#menu:after
+{
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+}
+
+* html #menu             { zoom: 1; } /* IE6 */
+*:first-child+html #menu { zoom: 1; } /* IE7 */
+
+#menu ul li:first-child a:after
+{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after
+{
+    border-bottom-color: #04acec;
+}
+
+
+		
+		html { 
+			background: url(image/fon.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
